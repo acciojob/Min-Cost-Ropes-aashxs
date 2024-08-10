@@ -4,7 +4,7 @@ function mincost(arr)
 // return the min cost
 	const brr = [];
 arr.sort((a, b) => {
-  a - b;
+  return (a - b);
 });
 
 arr.reduce((value, item) => {
@@ -19,7 +19,7 @@ arr.reduce((value, item) => {
       
 
   })
-  console.log(a);
+ return a;
   
 }
 
