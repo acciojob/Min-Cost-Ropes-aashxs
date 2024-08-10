@@ -20,6 +20,7 @@ while(arr.length>1){
         return acc;
         
     })
+	 return mincost;
 		
 	}
 module.exports=mincost;
