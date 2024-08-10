@@ -2,25 +2,24 @@ function mincost(arr)
 { 
 //write your code here
 // return the min cost
-	const brr = [];
-arr.sort((a, b) => {
-  return (a - b);
-});
-
-arr.reduce((value, item) => {
-  value = value + item;
-
-  brr.push(value);
-  return value;
-});
-   let a=0;
-  brr.forEach((value)=>{
-    a = a+value;
-      
-
-  })
- return a;
-  
-}
-
+	const brr=[];
+while(arr.length>1){
+    arr.sort((a,b)=>{
+        return(a-b)})
+        console.log(arr);
+        let min=arr[0]+arr[1];
+        brr.push(min);
+        arr.shift();
+        arr.shift();
+        arr.push(min);
+        console.log(arr);
+    }
+    const mincost=brr.reduce((acc,item)=>{
+        
+        acc=acc+item;
+        return acc;
+        
+    })
+		
+	}
 module.exports=mincost;
